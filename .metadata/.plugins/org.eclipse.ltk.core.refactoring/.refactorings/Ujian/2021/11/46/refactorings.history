@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.bratablessza.ujian&apos; to &apos;com.bratablessza&apos;&#x0D;&#x0A;- Original project: &apos;Ujian&apos;&#x0D;&#x0A;- Original element: &apos;Ujian/src/main/java/com.bratablessza.ujian&apos;&#x0D;&#x0A;- Renamed element: &apos;Ujian/src/main/java/com.bratablessza&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.bratablessza.ujian&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bratablessza.ujian" name="com.bratablessza" qualified="false" references="true" stamp="1636687446030" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,38 @@
+package com.bratablessza.controller;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bratablessza.model.bensinEntity;
+import com.bratablessza.repositories.BensinRepository;
+
+@RestController
+@RequestMapping("/bensin")
+public class BensinController {
+	@Autowired
+	BensinRepository bensinRepo;
+	
+	@PostMapping("/insert")
+	public String postData(@RequestBody bensinEntity bensin) {
+		bensinRepo.save(bensin);
+		return "Produk bensin berhasil ditambahkan";
+	}
+	
+	@GetMapping("/index")
+	public List<bensinEntity> tampilAllData(){
+		return bensinRepo.findAll();
+	}
+	
+	@GetMapping("/getById/{id}")
+	public Optional<bensinEntity> getByID(@PathVariable(value = "id" ) Long id) {
+		return bensinRepo.findById(id);
+	}
+}

@@ -1,0 +1,10 @@
+package com.bratablessza.repositories;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.bratablessza.model.bensinEntity;
+@Repository
+public interface BensinRepository extends JpaRepository<bensinEntity, Long>{
+
+}
